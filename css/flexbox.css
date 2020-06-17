@@ -1,0 +1,109 @@
+
+/*sourses;  https://css-tricks.com/snippets/css/a-guide-to-flexbox/, https://philipwalton.github.io/solved-by-flexbox/demos/grids/, https://www.youtube.com/watch?v=Xff_eGOU_Ls&feature=youtu.be, https://web.dev/responsive-web-design-basics/#set-the-viewport */
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+
+/*
+	Here we are going to establish some rules for our 'box'	which contains all the elements to be wrapped into the flexbox model.
+*/
+.box {
+
+	/* 
+		The statement below sets us into the flexbox display mode. Note support for flexbox still necessitates some vendor prefixes (see http://caniuse.com/#search=flex)
+	*/
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex; 
+
+	/* 
+		A flexbox will try to fit all elements in one line by default. The 'flex-wrap' property lets us wrap child elements that become too wide for their current row.
+	*/
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap; 
+
+	/* 
+		To get our flexbox to change how elements are spanned across the remaining space, we can use the 'justify-content' property. In this case, we are specifying that we want the extra space to be balanced around our elements.
+	*/
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+
+}
+.box-block {
+	/*
+		we are working with div, in this case we have set a flex-basis value that is a pixel value to reflect the 'minimum' width before the flexbox reflows and stacks the elements inside. Additionally, the use of a flex-grow value of 3 ensures that our image is 'heavier' (will take up more space) when available.
+	*/
+	-webkit-flex: 3 1 400px;
+	-ms-flex: 3 1 400px;
+	flex: 3 1 400px;
+
+	padding: 0 2rem;
+	
+}
+
+.grid{
+background: white;	
+ margin: 0 0 20px 0;
+height: 200px;
+
+}
+ 
+.grid .col-1-3{
+ background-color: #AAA;
+ height: 200px;
+}
+.grid .col-2-3{
+	 background-color: #333;
+	 height: 200px;
+}
+
+[class*='col-'] {
+	float: left;
+  padding-right: 20px;
+ 
+}
+
+.col-2-3 {
+  width: 66.66%;
+   
+}
+.col-1-3 {
+  width: 33.33%;
+ 
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-pad {
+  padding: 20px 0 20px 20px;
+ 
+}
+@media (min-width: 30em) {
+ .small-Grid--fit > .Grid-cell {
+    flex: 1;
+  }
+  .small-Grid--full > .Grid-cell {
+    flex: 0 0 100%;
+  }
+  .small-Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%
+  }
+  .small-Grid--1of3 > .Grid-cell {
+    flex: 0 0 33.3333%
+  }
+  .box-block {
+    flex: 0 0 20%;
+  }
+.col-1-3{
+	 flex: 1;
+}
+
+}
+

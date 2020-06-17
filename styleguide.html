@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>P01 - Step 03 Check-in</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/grids.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<script src="js/app.js"></script>
+
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,800&family=PT+Sans&display=swap" rel="stylesheet">
+      <script src="js/button.js"></script>
+  </head>
+  <body>
+
+
+
+      <!-- The navigation menu -->
+<div class="navbar">
+  <a href="index.html"><i class="fa fa-fw fa-home"></i> Wireframes</a> 
+  <a href="layout.html"><i class="fa fa-fw fa-search"></i> Layouts</a> 
+  <a class="active" href="styleguide.html"><i class="fa fa-fw fa-envelope"></i> Style Guide</a> 
+  <a href="citation.html"><i class="fa fa-fw fa-user"></i> Citation</a>
+</div>
+ 
+    <h1>style guide and Pattern Library</h1>
+     <section class="section-element">
+    <h2>Basic Interactive elements:</h2>
+    <div class="styleguideitems box">
+      <h3>In-text Link</h3>
+      <p>This is <a class="intext-link" href="#" rel="in-text">an in-text link</a></p>    </div>
+     <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+            &lt;p&gt;This is &lt;a class="intext-link" href="#" rel="in-text"&gt;an in-text link&lt;/a&gt;&lt;/p&gt;
+         </div>
+<div class="styleguideitems box">
+  <h3>Call To action Button</h3><button class="button-actioncall" onclick="myFunction()">Click me</button></div>
+<button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel  box-block">
+            &lt;button class="button-actioncall" onclick="myFunction()"&gt;Click me&lt;/button&gt;
+         </div>
+<div class="styleguideitems box">
+  <h3>Submit Button</h3><button class="button-submit" type="Submit">Submit</button></div>
+ <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel  box-block">
+            &lt;button class="button-submit" type="submit"&gt;Submit&lt;/button&gt;
+         </div>
+<div class="styleguideitems box">
+  <h3>submit and reset button for forms</h3> 
+<div class="fcontainer" >
+  <form action="/action_page.php">
+    <div class="frow">
+      <div class="fcol-25">
+        <label class="flable" for="fname">First Name</label>
+      </div>
+      <div class="fcol-75">
+        <input class="ftext" type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="frow">
+      <div class="fcol-25">
+        <label class="flable" for="lname">Last Name</label>
+      </div>
+      <div class="fcol-75">
+        <input class="ftext" type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="frow">
+      <div class="fcol-25">
+        <label class="flable" for="province">Province</label>
+      </div>
+      <div class="fcol-75">
+        <select id="province" name="province">
+          <option value="Alberta">Alberta</option>
+          <option value="British Columbia">British Columbia</option>
+          <option value="Manitoba">Manitoba</option>
+        </select>
+      </div>
+    </div>
+    <div class="frow">
+      <div class="fcol-25">
+        <label class="flable" for="subject">Subject</label>
+      </div>
+      <div class="fcol-75">
+        <textarea class="ftextarea" id="subject" name="subject" placeholder="Write something.."></textarea>
+      </div>
+    </div>
+    <div class="frowbutton">
+      <input class="button-submit" type="submit" value="Submit">
+    </div>
+      <div class="frowbutton">
+        <input class="button-reset" type="reset" value="Reset">
+    </div>
+  </form>
+</div>
+</div>
+
+           <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+          
+            &lt;div class="fcontainer" &gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="frow"&gt;
+      &lt;div class="fcol-25"&gt;
+        &lt;label class="flable" for="fname"&gt;First Name&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="fcol-75"&gt;
+        &lt;input class="ftext" type="text" id="fname" name="firstname" placeholder="Your name.."&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="frow"&gt;
+      &lt;div class="fcol-25"&gt;
+        &lt;label class="flable" for="lname"&gt;Last Name&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="fcol-75"&gt;
+        &lt;input class="ftext" type="text" id="lname" name="lastname" placeholder="Your last name.."&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="frow"&gt;
+      &lt;div class="fcol-25"&gt;
+        &lt;label class="flable" for="province"&gt;Province&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="fcol-75"&gt;
+        &lt;select id="province" name="province"&gt;
+          &lt;option value="Alberta"&gt;Alberta&lt;/option&gt;
+          &lt;option value="British Columbia"&gt;British Columbia&lt;/option&gt;
+          &lt;option value="Manitoba"&gt;Manitoba&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="frow"&gt;
+      &lt;div class="fcol-25"&gt;
+        &lt;label class="flable" for="subject"&gt;Subject&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="fcol-75"&gt;
+        &lt;textarea class="ftextarea" id="subject" name="subject" placeholder="Write something.."&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="frowbutton"&gt;
+      &lt;input class="button-submit" type="submit" value="Submit"&gt;
+    &lt;/div&gt;
+      &lt;div class="frowbutton"&gt;
+        &lt;input class="button-reset" type="reset" value="Reset"&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;  
+         </div>
+
+          <div class="styleguideitems box">
+      <h3>Text input field and a label</h3> <div class="frow">
+      <div class="inputcol-25">
+        <label class="inputlable" for="inputname">First Name</label>
+      </div>
+      <div class="inputcol-75">
+        <input class="inputtext" type="text" id="inputname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+  </div>
+           <button onclick="myFunction()" class="accordion">code</button>
+        <div class="panel box-block">
+         &lt;div class="inputcol-25"&gt;
+        &lt;label class="inputlable" for="inputname"&gt;First Name&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="inputcol-75"&gt;
+        &lt;input class="inputtext" type="text" id="inputname" name="firstname" placeholder="Your name.."&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+            &lt;input type="submit" value="Submit"&gt;  
+         </div>
+           </section>
+
+<!---Color Swatch-->
+            <section class="section-element">
+ <div class="styleguidecolors box">
+      <h3>Primary Colors</h3>
+            <div class="circle color1">
+     <p class="shapep"><span>RGB(55, 173, 25)</span><span>CMYK(68%, 0%, 86%, 32%)</span></p>
+  </div>
+  <div class="circle color2">
+     <p class="shapep"><span>RGB(207, 23, 23)</span><span>CMYK(0%, 89%, 89%, 19%)</span></p>
+  </div>
+ <div class="circle color3">
+     <p class="shapep"><span>RGB(116, 21, 29)</span><span>CMYK(0%, 82%, 75%, 55%)</span></p>
+  </div>
+   <div class="circle color4">
+     <p class="shapep"><span>RGB(255, 255, 255)</span><span>CMYK(0%, 0%, 0%, 0%)</span></p>
+  </div>
+   <div class="circle color5">
+     <p class="shapep"><span>RGB(134, 166, 195)</span><span>CMYK(31%, 15%, 0%, 24%)</span></p>
+  </div>
+   <div class="circle color6">
+     <p class="shapep"><span>RGB(28, 85, 138)</span><span>CMYK(80%, 38%, 0%, 46%)</span></p>
+  </div>
+   <div class="circle color7">
+     <p class="shapep"><span>RGB(10, 46, 77)</span><span>CMYK(87%, 40%, 0%, 70%)</span></p>
+  </div>
+   <div class="circle color8">
+     <p class="shapep"><span>RGB(5, 25, 41)</span><span>CMYK(88%, 39%, 0%, 84%)</span></p>
+  </div>
+</div>
+</section>
+    
+  <section class="section-element">
+    <h2>Text Styling:</h2>
+   <div class="styleguideitems box">
+      <h3>Heading 1</h3>
+      <h1 class="h1style">This is heading level one</h1>    </div>
+     <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+            &lt;h1 class="h1style"&gt;This is heading level one&lt;h1&gt;
+         </div>
+
+         <div class="styleguideitems box">
+      <h2>Heading 2</h2>
+      <h2 class="h2style">This is heading level two</h2>    </div>
+     <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+            &lt;h2 class="h2style"&gt;This is heading level two&lt;h2&gt;
+         </div>
+
+         <div class="styleguideitems box">
+      <h3>Heading 3</h3>
+      <h3 class="h3style">This is heading level three</h3>    </div>
+     <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+            &lt;h3 class="h3style"&gt;This is heading level three&lt;h3&gt;
+         </div>
+
+    <div class="styleguideitems box">
+      <h3>Paragraph</h3>
+      <p class="pstyle">Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>    </div>
+     <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+            &lt;p class="pstyle"&gt;This is a paragraph&lt;p&gt;
+         </div>
+            
+      <div class="styleguideitems box">
+      <h3>Bulletted List</h3>
+        <ul class="ulstyle">
+    <li>list Item</li>
+    <li>list Item</li>
+    <li>list Item</li>
+    <li>list Item</li>
+    <li>list Item</li>
+</ul></div>
+     <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+             &lt;ul class="ulstyle"&gt;&lt;li&gt;list Item&lt;li&gt;
+            &lt;li&gt;list Item&lt;li&gt;
+            &lt;li&gt;list Item&lt;li&gt;
+            &lt;li&gt;list Item&lt;li&gt;
+            &lt;li&gt;list Item&lt;li&gt;&lt;ul&gt;
+         </div>
+         
+         <div class="styleguideitems box">
+      <h3>Numbered List</h3>
+           <ol class="olstyle">
+    <li>list Item</li>
+    <li>list Item</li>
+    <li>list Item</li>
+    <li>list Item</li>
+    <li>list Item</li>
+</ol></div>
+     <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+            &lt;ol class="olstyle"&gt;&lt;li&gt;list Item&lt;li&gt;
+            &lt;li&gt;list Item&lt;li&gt;
+            &lt;li&gt;list Item&lt;li&gt;
+            &lt;li&gt;list Item&lt;li&gt;
+            &lt;li&gt;list Item&lt;li&gt;&lt;ol&gt;
+         </div>
+    </section>
+
+
+
+  <section class="section-element">
+    <h2>Modular Pattern Elements:</h2>
+    <div class="styleguideitems box">
+      <h3>Header</h3>
+    
+    <!--header-->
+    <nav class="headernav" id="navheadercheck">
+      <input class="headercheckbox" type="checkbox" id="headercheck">
+      <label class="headerlable" for="headercheck">
+        <i class="headerfas headerfa-bars">header</i>
+      </label>
+      <!--<label class="headerlogo">Allcom</label>-->
+      <ul class="headerul">
+<li class="headerli"><a class="headeractive" href="#">Home</a></li>
+<li class="headerli"><a class="headerpassive" href="#">Products</a></li>
+<li class="headerli"><a class="headerpassive" href="#">Services</a></li>
+<li class="headerli"><a class="headerpassive" href="#">Maintenance</a></li>
+<li class="headerli"><a class="headerpassive" href="#">Testimonial</a></li>
+<li class="headerli"><a class="headerpassive" href="#">Contact</a></li>
+</ul>
+</nav>
+    <section class="headersection"></section>
+  </div>
+   <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+             &lt;nav class="headernav"&gt;
+       &lt;input class="headercheckbox" type="checkbox" id="header"&gt;
+       &lt;label class="headerlable" for="check" class="headercheckbtn"&gt;
+         &lt;class="headerfas headerfa-bars"&gt;&lt;i&gt;
+       &lt;label&gt;
+       &lt;ul class="headerul"&gt;
+ &lt;li class="headerli"&gt;&lt;a class="headeractive" href="#"&gt;Home &lt;a&gt;&lt;li&gt;
+ &lt;li class="headerli"&gt;&lt;a class="headerpassive" href="#"&gt;Products &lt;a&gt;&lt;li&gt;
+ &lt;li class="headerli"&gt;&lt;a class="headerpassive" href="#"&gt;Services &lt;a&gt;&lt;li&gt;
+ &lt;li class="headerli"&gt;&lt;a class="headerpassive" href="#"&gt;Maintenance &lt;a&gt;&lt;li&gt;
+ &lt;li class="headerli"&gt;&lt;a class="headerpassive" href="#"&gt;Testimonial &lt;a&gt;&lt;li&gt;
+ &lt;li class="headerli"&gt;&lt;a class="headerpassive" href="#"&gt;Contact &lt;a&gt;&lt;li&gt;
+ &lt;ul&gt;
+ &lt;nav&gt;
+     &lt;section class="headersection"&gt;&lt;section&gt;
+         </div>
+</section>
+     <section class="section-element">
+    <h2>Modular Pattern Elements:</h2>
+    <div class="styleguideitems box">
+      <h3>Footer</h3>
+    <footer>
+      <div class="footermain-content">
+        <div class="footerfleft footerbox">
+          <h2>About us</h2>
+<div class="footercontent">
+            <p>It is building code and every building needs the system to receive occupancy. The system is designed as per latest building code but with consideration of being the most economical solution in its field.</p>
+<div class="footersocial">
+              <a href="#">facebook<span class="footerfab fa-facebook-f"></span></a>
+              <a href="#"><span class="footerfab fa-twitter">twitter</span></a>
+              <a href="#">instagram<span class="footerfab fa-instagram"></span></a>
+              <a href="#">youtube<span class="footerfab fa-youtube"></span></a>
+            </div>
+          </div>
+</div>
+</div>
+<div class="footercenter box">
+          <h2>Address</h2>
+<div class="footercontent">
+            <div class="footerplace">
+              1457 hill street,<span class="footerfas fa-map-marker-alt"></span>
+              <span class="footertext">Northvancouver, bc, canada</span>
+            </div>
+<div class="footerphone">
+              <span class="footerfas fa-phone-alt"></span>
+              <span class="footertext">+001-6549875428</span>
+            </div>
+<div class="footeremail">
+              <span class="footerfas fa-envelope"></span>
+              <span class="footertext">info@allcome.com</span>
+            </div>
+
+</div>
+<div class="footerright box">
+          <h2>Contact us</h2>
+<div class="footercontent">
+            <form action="#">
+               <div class="footeremail">
+  <label class="footertext" for="fname">Name:</label>
+  <input type="text" class="footeremail" name="fname" value="John">
+  <label class="footertext" for="lname">Email:</label>
+  <input type="text" class="footeremail" name="lname" value="Doe"></div>
+   <label for="message"></label>
+                <div class="footertext"><label class="footertext" for="fname">Message:</label></div>
+<textarea id="footermsgForm" rows="2" cols="25"></textarea> 
+        <div class="footerbtn">
+  <input type="submit" value="Submit"></div>
+</form> 
+
+          </div>
+        </div>
+<div class="footerbottom">
+          <span class="footercredit">Created By <a href="#">Allcome</a> | </span>
+          <span class="footerfar fa-copyright">2020 All rights reserved.</span> 
+      </div>
+</div>
+  
+ </footer>
+</div>
+    <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+
+           &lt;footer&gt;
+      &lt;div class="footermain-content"&gt;
+        &lt;div class="footerfleft footerbox"&gt;
+          &lt;h2&gt;
+About us&lt;h2&gt;
+&lt;div class="footercontent"&gt;
+            &lt;p&gt;
+It is building code and every building needs the system to receive occupancy.
+The system is designed as per latest building code but with consideration of being the most economical solution in its field.&lt;p&gt;
+&lt;div class="footersocial"&gt;
+              &lt;a href="#"&gt;facebook&lt;span class="footerfab fa-facebook-f"&gt;&lt;span&gt;&lt;a&gt;
+              &lt;a href="#"&gt;&lt;span class="footerfab fa-twitter"&gt;twitter&lt;span&gt;&lt;a&gt;
+              &lt;a href="#"&gt;instagram&lt;span class="footerfab fa-instagram"&gt;&lt;span&gt;&lt;a&gt;
+              &lt;a href="#"&gt;youtube&lt;span class="footerfab fa-youtube"&gt;&lt;span&gt;&lt;a&gt;
+            &lt;div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div class="footercenter box"&gt;
+          &lt;h2&gt;
+Address&lt;h2&gt;
+&lt;div class="footercontent"&gt;
+            &lt;div class="footerplace"&gt;
+              1457 hill street,&lt;span class="footerfas fa-map-marker-alt"&gt;&lt;span&gt;
+              &lt;span class="footertext"&gt;Northvancouver, bc, canada&lt;span&gt;
+            &lt;div&gt;
+&lt;div class="footerphone"&gt;
+              &lt;span class="footerfas fa-phone-alt"&gt;&lt;span&gt;
+              &lt;span class="footertext"&gt;+001-6549875428&lt;span&gt;
+            &lt;div&gt;
+&lt;div class="footeremail"&gt;
+              &lt;span class="footerfas fa-envelope"&gt;&lt;span&gt;
+              &lt;span class="footertext"&gt;info@allcome.com&lt;span&gt;
+            &lt;div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div class="footerright box"&gt;
+          &lt;h2&gt;
+Contact us&lt;h2&gt;
+&lt;div class="footercontent"&gt;
+            &lt;form action="#"&gt;
+              &lt;div class="footeremail"&gt;
+                &lt;div class="footertext"&gt;
+Email *&lt;div&gt;
+&lt;input type="footeremail" required&gt;
+              &lt;div&gt;
+&lt;div class="footermsg"&gt;
+                &lt;div class="footertext"&gt;
+Message *&lt;div&gt;
+
+&lt;textarea id=".footermsgForm" rows="2" cols="25" required&gt;&lt;textarea&gt;
+              
+              &lt;br&gt;
+&lt;div class="footerbtn"&gt;
+&lt;button type="submit"&gt;Send&lt;button&gt;
+              &lt;div&gt;
+&lt;div class="footerbottom"&gt;
+&lt;center&gt;
+          &lt;span class="footercredit"&gt;Created By &lt;a href="https://allcome.com"&gt;Allcome&lt;a&gt; | &lt;span&gt;
+          &lt;span class="footerfar fa-copyright"&gt;&lt;span&gt; 2020 All rights reserved.
+        &lt;center&gt;
+&lt;div&gt;
+&lt;div&gt;
+        </div>  
+ </section>
+<section class="section-element">
+ <div class="styleguideitems box">
+      <h3>Product View</h3>
+      <div class="productcontainer">
+        <div class="productcard">
+            <div class="productBackground">
+                <div class="productgradients">
+                    <div class="productgradient second blue"></div>
+                    <div class="productgradient red"></div>
+                    <div class="productgradient green"></div>
+                    <div class="productgradient orange"></div>
+                    <div class="productgradient black"></div>
+                </div>
+                <h1 class="productAllcom">Allcom</h1>
+                <img src="img/Allcomlogo.png" alt="Allcomlogo" class="productlogo">
+                <a href="#" class="productshare"><i class="productfas productfa-share-alt"></i></a>
+
+                <img src="img/firealarm.jpg" alt="" class="product productshow blue">
+                <img src="img/red.png" alt="" class="product red">
+                <img src="img/green.png" alt="" class="product green">
+                <img src="img/orange.png" alt="" class="product orange">
+                <img src="img/firealarm.jpg" alt="" class="product black">
+
+            </div>
+            <div class="productinfo">
+                <div class="productName">
+                    <div>
+                        <h1 class="productbig">FireAlarm</h1>
+                        <span class="productnew">new</span>
+                    </div>
+                    <h2 class="productsmall">Men's running shoes</h2>
+                </div>
+                <div class="productdescription">
+                    <h3 class="producttitle">Product Info</h3>
+                    <p class="producttext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                </div>
+                <div class="productcolor-container">
+                    <h3 class="producttitle">Color</h3>
+                    <div class="productcolors">
+                        <span class="productcolor active blue"></span>
+                        <span class="productcolor red"></span>
+                        <span class="productcolor green"></span>
+                        <span class="productcolor orange"></span>
+                        <span class="productcolor black"></span>
+                    </div>
+                </div>
+                <div class="productsize-container">
+                    <h3 class="producttitle">size</h3>
+                    <div class="productsizes">
+                        <span class="productsize">7</span>
+                        <span class="productsize">8</span>
+                        <span class="productsize active">9</span>
+                        <span class="productsize">10</span>
+                        <span class="productsize">11</span>
+                    </div>
+                </div>
+                <div class="productbuy-price">
+                    <a href="#" class="productbuy"><i class="fas fa-shopping-cart"></i>Add to card</a>
+                    <div class="productprice">
+                        <i class="productfas productfa-dollar-sign"></i>
+                        <h2>189.99</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      </div>
+     <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+          
+               &lt;div class="productcontainer"&gt;
+        &lt;div class="productcard"&gt;
+            &lt;div class="productBackground"&gt;
+                &lt;div class="productgradients"&gt;
+                    &lt;div class="productgradient second" color="blue"&gt;&lt;&amp;div&gt;
+                    &lt;div class="productgradient" color="red"&gt;&lt;&amp;div&gt;
+                    &lt;div class="productgradient" color="green"&gt;&lt;&amp;div&gt;
+                    &lt;div class="productgradient" color="orange"&gt;&lt;&amp;div&gt;
+                    &lt;div class="productgradient" color="black"&gt;&lt;&amp;div&gt;
+                &lt;&amp;div&gt;
+                &lt;h1 class="productAllcom"&gt;Allcom&lt;&amp;h1&gt;
+                &lt;img src="img/Allcomlogo.png" alt="" class="productlogo"&gt;
+                &lt;a href="#" class="productshare"&gt;&lt;i class="productfas productfa-share-alt"&gt;&lt;&amp;i&gt;&lt;&amp;&amp;a&gt;
+
+                &lt;img src="img/firealarm.jpg" alt="" class="product productshow" color="blue"&gt;
+                &lt;img src="img/red.png" alt="" class="product" color="red"&gt;
+                &lt;img src="img/green.png" alt="" class="product" color="green"&gt;
+                &lt;img src="img/orange.png" alt="" class="product" color="orange"&gt;
+                &lt;img src="img/firealarm.jpg" alt="" class="product" color="black"&gt;
+
+            &lt;&amp;div&gt;
+            &lt;div class="productinfo"&gt;
+                &lt;div class="productName"&gt;
+                    &lt;div&gt;
+                        &lt;h1 class="productbig"&gt;FireAlarm&lt;h1&gt;
+                        &lt;span class="productnew"&gt;new&lt;span&gt;
+                    &lt;&amp;div&gt;
+                    &lt;h3 class="productsmall"&gt;Men's running shoes&lt;h3&gt;
+                &lt;div&gt;
+                &lt;div class="productdescription"&gt;
+                    &lt;h3 class="producttitle"&gt;Product Info&lt;&amp;h3&gt;
+                    &lt;p class="producttext"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.&lt;&amp;p&gt;
+                &lt;&amp;div&gt;
+                &lt;div class="productcolor-container"&gt;
+                    &lt;h3 class="producttitle"&gt;Color&lt;/h3&gt;
+                    &lt;div class="productcolors"&gt;
+                        &lt;span class="productcolor active" primary="#2175f5" color="blue"&gt;&lt;&amp;span&gt;
+                        &lt;span class="productcolor" primary="#f84848" color="red"&gt;&lt;&amp;span&gt;
+                        &lt;span class="productcolor" primary="#29b864" color="green"&gt;&lt;&amp;span&gt;
+                        &lt;span class="productcolor" primary="#ff5521" color="orange"&gt;&lt;&amp;span&gt;
+                        &lt;span class="productcolor" primary="#444" color="black"&gt;&lt;&amp;span&gt;
+                    &lt;&amp;div&gt;
+                &lt;&amp;div&gt;
+                &lt;div class="productsize-container"&gt;
+                    &lt;h3 class="producttitle"&gt;size&lt;&amp;h3&gt;
+                    &lt;div class="productsizes"&gt;
+                        &lt;span class="productsize"&gt;7&lt;&amp;span&gt;
+                        &lt;span class="productsize"&gt;8&lt;&amp;span&gt;
+                        &lt;span class="productsize active"&gt;9&lt;&amp;span&gt;
+                        &lt;span class="productsize"&gt;10&lt;&amp;span&gt;
+                        &lt;span class="productsize"&gt;11&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="productbuy-price"&gt;
+                    &lt;a href="#" class="productbuy"&gt;&lt;i class="fas fa-shopping-cart"&gt;&lt;&amp;i&gt;Add to card&lt;&amp;a&gt;
+                    &lt;div class="productprice"&gt;
+                        &lt;i class="productfas productfa-dollar-sign"&gt;&lt;&amp;i&gt;
+                        &lt;h1&gt;189.99&lt;&amp;h1&gt;
+                    &lt;&amp;div&gt;
+                &lt;&amp;div&gt;
+            &lt;&amp;div&gt;
+        &lt;&amp;div&gt;
+    &lt;&amp;div&gt;
+         </div>
+</section>
+<section class="section-element">
+         <!--Testimonial-->
+ <h2>Testimonial:</h2>
+    <div class="styleguideitems box">
+      <h3>Testimonial page</h3>
+      
+
+<div class="testwrapper">
+   <div class="testimonial">
+     <div class="testitem">
+       <div class="testimg">
+         <img src="img/person_1.png" alt="">
+       </div>
+       <div class="testname">Mike Kane</div>
+       <div class="testcontent">
+         <h1><i class="testfas testfa-quote-left"></i>person1</h1>
+         <p class="pstyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat sint distinctio corporis debitis neque aliquid quae maiores molestiae qui. Repudiandae itaque beatae illum labore.</p>
+         <div class="teststars">
+         <img src="img/star_gold.png" alt="">
+           <img src="img/star_gold.png" alt="">
+           <img src="img/star_gold.png" alt="">
+           <img src="img/star_gold.png" alt="">
+           <img src="img/star_gold.png" alt="">
+         </div>
+       </div>
+     </div>
+     <div class="testitem">
+       <div class="testimg">
+         <img src="img/person_2.png" alt="">
+
+       </div>
+       <div class="testname">carlo rossi</div>
+       <div class="testcontent">
+         <h1><i class="testfas testfa-quote-left"></i>person2</h1>
+         <p class="pstyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat sint distinctio corporis debitis neque aliquid quae maiores molestiae qui. Repudiandae itaque beatae illum labore.</p>
+         <div class="teststars">
+           <img src="img/star_gold.png" alt="">
+           <img src="img/star_gold.png" alt="">
+           <img src="img/star_gray.png" alt="">
+           <img src="img/star_gray.png" alt="">
+           <img src="img/star_gray.png" alt="">
+         </div>
+       </div>
+     </div>
+     <div class="testitem">
+       <div class="testimg">
+         <img src="img/person_3.png" alt="">
+       </div>
+       <div class="testname">Jason Peter</div>
+       <div class="testcontent">
+         <h1><i class="testfas testfa-quote-left"></i>person3</h1>
+         <p class="pstyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat sint distinctio corporis debitis neque aliquid quae maiores molestiae qui. Repudiandae itaque beatae illum labore.</p>
+         <div class="teststars">
+           <img src="img/star_gold.png" alt="">
+           <img src="img/star_gold.png" alt="">
+           <img src="img/star_gold.png" alt="">
+           <img src="img/star_gray.png" alt="">
+           <img src="img/star_gray.png" alt="">
+         </div>
+       </div>
+     </div>
+     <div class="testclear-fix"></div>
+  </div>
+</div>    
+
+      </div>
+     <button onclick="myFunction()" class="accordion">code</button>
+         <div class="panel box-block">
+       
+
+            &lt;div class="testwrapper"&gt;
+   &lt;div class="testimonial"&gt;
+     &lt;div class="testitem"&gt;
+       &lt;div class="testimg"&gt;
+         &lt;img src="img/person_1.png" alt=""&gt;
+       &lt;&amp;div&gt;
+       &lt;div class="testname"&gt;Mike Kane&lt;&amp;div&gt;
+       &lt;div class="testcontent"&gt;
+         &lt;h1&gt;&lt;i class="testfas testfa-quote-left"&gt;&lt;&amp;i&gt;&lt;&amp;h1&gt;
+         &lt;p class="pstyle"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat sint distinctio corporis debitis neque aliquid quae maiores molestiae qui. Repudiandae itaque beatae illum labore.&lt;&amp;p&gt;
+         &lt;div class="teststars"&gt;
+         &lt;img src="star_gold.png" alt=""&gt;
+           &lt;img src="img/star_gold.png" alt=""&gt;
+           &lt;img src="img/star_gold.png" alt=""&gt;
+           &lt;img src="img/star_gold.png" alt=""&gt;
+           &lt;img src="img/star_gold.png" alt=""&gt;
+         &lt;&amp;div&gt;
+       &lt;&amp;div&gt;
+     &lt;&amp;div&gt;
+     &lt;div class="testitem"&gt;
+       &lt;div class="testimg"&gt;
+         &lt;img src="img/person_2.png" alt=""&gt;
+       &lt;&amp;div&gt;
+       &lt;div class="testname"&gt;carlo rossi&lt;&amp;div&gt;
+       &lt;div class="testcontent"&gt;
+         &lt;h1&gt;&lt;i class="testfas testfa-quote-left"&gt;&lt;&amp;i&gt;&lt;&amp;h1&gt;
+         &lt;p class="pstyle"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat sint distinctio corporis debitis neque aliquid quae maiores molestiae qui. Repudiandae itaque beatae illum labore.&lt;&amp;p&gt;
+         &lt;div class="teststars"&gt;
+           &lt;img src="img/star_gold.png" alt=""&gt;
+           &lt;img src="img/star_gold.png" alt=""&gt;
+           &lt;img src="img/star_gray.png" alt=""&gt;
+           &lt;img src="img/star_gray.png" alt=""&gt;
+           &lt;img src="img/star_gray.png" alt=""&gt;
+         &lt;&amp;div&gt;
+       &lt;&amp;div&gt;
+     &lt;&amp;div&gt;
+     &lt;div class="testitem"&gt;
+       &lt;div class="testimg"&gt;
+         &lt;img src="img/person_3.png" alt=""&gt;
+       &lt;&amp;div&gt;
+       &lt;div class="testname"&gt;Jason Peter&lt;&amp;div&gt;
+       &lt;div class="testcontent"&gt;
+         &lt;h1&gt;&lt;i class="testfas testfa-quote-left"&gt;&lt;&amp;i&gt;&lt;&amp;h1&gt;
+         &lt;p class="pstyle"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat sint distinctio corporis debitis neque aliquid quae maiores molestiae qui. Repudiandae itaque beatae illum labore.&lt;&amp;p&gt;
+         &lt;div class="teststars"&gt;
+           &lt;img src="img/star_gold.png" alt=""&gt;
+           &lt;img src="img/star_gold.png" alt=""&gt;
+           &lt;img src="img/star_gold.png" alt=""&gt;
+           &lt;img src="img/star_gray.png" alt=""&gt;
+           &lt;img src="img/star_gray.png" alt=""&gt;
+         &lt;&amp;div&gt;
+       &lt;&amp;div&gt;
+     &lt;&amp;div&gt;
+     &lt;div class="testclear-fix"&gt;&lt;&amp;div&gt;
+  &lt;&amp;div&gt;
+&lt;&amp;div&gt;
+         </div>
+</section>
+<!--Grid-->
+     <div class="styleguideitems box">
+      <h1>Flexbox</h1>
+      <ul class="gridflex-container">
+  <li class="gridflex-item">1</li>
+  <li class="gridflex-item">2</li>
+  <li class="gridflex-item">3</li>
+  <li class="gridflex-item">4</li>
+  <li class="gridflex-item">5</li>
+  <li class="gridflex-item">6</li>
+    <li class="gridflex-item">7</li>
+  <li class="gridflex-item">8</li>
+</ul>
+</div>
+ <div class="styleguideitems box">
+      <h1>flexbox</h1>
+ <ul class="gridflex-container">
+  <li class="gridflex-item">1</li>
+  <li class="gridflex-item">2</li>
+  <li class="gridflex-item">3</li>
+</ul>
+  </div>
+    <div class="styleguideitems box">
+      <h1>Flexbox</h1>
+ <ul class="gridflex-container">
+  <li class="gridflex-item">1</li>
+  <li class="gridflex-item">2</li>
+  <li class="gridflex-item">3</li>
+  <li class="gridflex-item">4</li>
+  </ul>
+  </div>
+
+   
+
+    
+  </body>
+</html>
