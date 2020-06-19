@@ -414,32 +414,32 @@ width: 50%;
 }
 /*Navigation bar style*/
 
-.navbar {
+.tnavbar {
   width: 100%;
   background-color: #555;
   overflow: auto;
 }
 
-.navbar a {
+.tnavbar a {
   float: left;
   padding: 12px;
   color: white;
   text-decoration: none;
   font-size: 1.7rem;
-  width: 25%; /* Four links of equal widths */
+  width: 15%; /* six links of equal widths */
   text-align: center;
 }
 
-.navbar a:hover {
+.tnavbar a:hover {
   background-color: #bfbaba;
 }
 
-.navbar a.active {
+.tnavbar a.active {
   background-color: #4CAF50;
 }
 
 @media screen and (max-width: 500px) {
-  .navbar a {
+  .tnavbar a {
     float: none;
     display: block;
     width: 100%;
@@ -1321,5 +1321,6 @@ footer{
 .testimonial .testitem .testcontent .teststars img{
   width: 25px;
 }
+
 
 }
